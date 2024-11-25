@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anies's Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #a0a0a0; 
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background-color: rgba(255, 255, 255, 0.3); 
+        }
+
+        .content {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .collection {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .collection-item {
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .collection-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .collection-item img {
+            width: 100%;
+            height: 350px; 
+            object-fit: contain; 
+            margin: 10px; 
+        }
+
+        .collection-item .info {
+            padding: 15px;
+        }
+
+        .collection-item h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 0 0 10px;
+        }
+
+        .collection-item p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer {
+   	    background-color: #333;
+    	    color: white; 
+    	    text-align: center;
+   	    padding: 10px 0;
+  	    margin-top: 50px;
+	}
+
+    </style>
+</head>
+<body>
+   
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="qualifications.html">Qualifications</a>
+        <a href="skills.html">Skills</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content">
+        <h1>Gallery</h1>
+        <p>Here are some images of myself.</p>
+
+        <div class="collection">
+            <!-- Collection Item 1 -->
+            <div class="collection-item">
+                <img src="g1.jpg" alt="Image 1">
+                <div class="info"></div>
+            </div>
+
+            <!-- Collection Item 2 -->
+            <div class="collection-item">
+                <img src="g2.jpg" alt="Image 2">
+                <div class="info"></div>
+            </div>
+
+            <!-- Collection Item 3 -->
+            <div class="collection-item">
+                <img src="g3.jpg" alt="Image 3">
+                <div class="info"></div>
+            </div>
+
+            <!-- Collection Item 4 -->
+            <div class="collection-item">
+                <img src="g5.jpg" alt="Image 4">
+                <div class="info"></div>
+            </div>
+
+            <!-- Collection Item 5 -->
+            <div class="collection-item">
+                <img src="g6.jpg" alt="Image 5">
+                <div class="info"></div>
+            </div>
+
+            <!-- Collection Item 6 -->
+            <div class="collection-item">
+                <img src="g7.jpg" alt="Image 6">
+                <div class="info"></div>
+            </div>
+
+            <!-- Collection Item 7 -->
+            <div class="collection-item">
+                <img src="g8.jpg" alt="Image 7">
+                <div class="info"></div>
+            </div>
+
+            <!-- Collection Item 8 -->
+            <div class="collection-item">
+                <img src="g9.jpg" alt="Image 8">
+                <div class="info"></div>
+            </div>
+        
+	    <!-- Collection Item 9 -->
+            <div class="collection-item">
+                <img src="g10.jpg" alt="Image 8">
+                <div class="info"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <p>&copy; 2024 Anies Sofina</p>
+    </div>
+</body>
+</html>
